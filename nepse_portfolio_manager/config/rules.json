@@ -1,0 +1,29 @@
+{
+  "broker_commission": {
+    "type": "slab",
+    "slabs": [
+      { "min": 0, "max": 50000, "rate": 0.004 },
+      { "min": 50000, "max": 500000, "rate": 0.0037 },
+      { "min": 500000, "max": 2000000, "rate": 0.0034 },
+      { "min": 2000000, "max": 10000000, "rate": 0.003 },
+      { "min": 10000000, "max": null, "rate": 0.0027 }
+    ],
+    "minimum_commission": 10
+  },
+
+  "sebon_fee_rate": 0.00015,
+  "dp_charge": 25,
+
+  "capital_gain_tax": {
+    "individual": {
+      "short_term_rate": 0.075,
+      "long_term_rate": 0.05,
+      "long_term_days": 365
+    },
+    "institution": {
+      "short_term_rate": 0.1,
+      "long_term_rate": 0.1,
+      "long_term_days": 365
+    }
+  }
+}
